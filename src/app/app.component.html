@@ -1,5 +1,9 @@
 <header>
   THis is a header
+  <a routerLink="/home" routerLinkActive="active-route">Home</a>
+  <a routerLink="/about" routerLinkActive="active-route">About</a>
+  <a routerLink="/users" routerLinkActive="active-route">User</a>
+  <a *ngFor="let url of urls" [routerLink]="['/details', url]" routerLinkActive="active-route">Person1</a>
 </header>
 
 <router-outlet></router-outlet>
